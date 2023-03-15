@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 :root{
     --font-color-general: #FFFFFF;
     --font-color-aditional: #828282;
@@ -9,7 +14,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
 }
 .wrapper{
     width: 100%;
@@ -28,7 +33,8 @@ h4{
     font-weight: 900;
     font-size: 16px;
     line-height: 24px;
-    /* color: #0D4D14; */
+    padding: 30px 30px 0 30px;
+    margin: 0;
 }
 .RoundRock{
     width: 100%;
@@ -99,7 +105,6 @@ h4{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 116px;
 }
 .helpButton{
     display: flex;
@@ -160,17 +165,20 @@ h4{
     font-weight: 400;
 }
 .imgBlock{
-    min-width: 385px;
+    width: 385px;
     min-height: 290px;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
+    border-radius: 30px 30px 0 0;
+    margin: 0 11px;
 }
 .grass{
     background-image: url('images/little_grass.png');
 }
 .flowers{
     background-image: url('images/little_flowers.png');
-    margin: 0 22px;
+    
 }
 .machine{
     background-image: url('images/grass_remove.png');
@@ -184,13 +192,26 @@ h4{
     flex-wrap: nowrap;
 }
 .textAbouth{
-    width: 19%;
+    max-width: 385px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #0D4D14;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
+    border-radius: 0 0 30px 30px;
+    margin: 0 11px;
 }
-
+.anyText{
+    padding: 10px 30px 30px 30px;
+    margin: 0;
+}
+.lightButton{
+    background-color: #FFFFFF;
+    box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+    margin-top: 50px;
+    margin-bottom: 0;
+}
 .AboutUs{
     min-height: 732px;
     background-image: url('images/Rectangle_grass_dark.png');
@@ -222,20 +243,11 @@ h4{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-.s-logo::before{
+.aboutAfter{
+    position: relative;
+    margin-bottom: 50px;
+}
+.aboutAfter::after{
     content: "";
     display: block;
     width: 109px;
@@ -244,37 +256,19 @@ h4{
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
-    left: 4px;
-    top: 48px;
+    transform: rotate(-3.6deg);
+    bottom: -45px;
+    right: -65px;
 }
-.infoBlocks{
-    width: 63%;
+
+.ContactUs{
+    background-color: #FCFCFC;
+
 }
-.imgBlock{
-    width: 32%;
-    margin: 0 auto;
-    text-align: center;
-    
+
+footer{
+    width:100%;
+    height: 145px;
+    background-color: #324B29;
 }
-.grass{
-    width: 385px;
-height: 290px;
-    background-image: url('images/little_grass.png');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.flowers{
-    width: 385px;
-height: 290px;
-    background-image: url('images/little_flowers.png');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.machine{
-    width: 385px;
-height: 290px;
-    background-image: url('images/grass_remove.png');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-*/
+
