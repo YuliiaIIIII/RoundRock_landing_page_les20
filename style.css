@@ -76,7 +76,7 @@ p{
     line-height: 67.5%;
     color: #FFFFFF;
 }
-    .company>span{
+.company>span{
     font-weight: 800;
     font-size: 27px;
     line-height: 118.5%;
@@ -310,38 +310,62 @@ p{
     background-color: #FCFCFC;
     margin-top: 5px;
 }
+.contactBlock{
+    margin: 70px auto 0;
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 52.5px;
+}
 .contactForm{
+    width: 50%;
     display: flex;
     justify-content: center;
-    
 }
-.inputField{
+.companyContacts{
+    width: 50%;
+}
+.pContacts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+.formField{
     background: #9FDEA9;
     border-radius: 61px;
     border: none;
     margin-bottom: 14px;
-    padding: 21px 53px;
+    padding: 16px 53px;
 }
 .emptyButton{
     border: 3px solid #4DB96B;
     border-radius: 61px;
-    padding: 21px 53px;
+    padding: 16px 53px;
     background-color: #FCFCFC;
+    display: block;
+    margin: 0 auto;
 }
 .emptyButton:hover{
     border: 3px solid #1e803a;
     border-radius: 61px;
     padding: 21px 53px;
     background-color: #d2f2ca;
+    cursor: pointer;
 }
 .mailCont{
     position: relative;
+    padding: 30px 0 0 44px;
 }
 .phoneCont{
     position: relative;
+    padding: 30px 0 0 44px;
 }
 .addressCont{
     position: relative;
+    padding: 30px 0 30px 44px;
 }
 .mailCont::before{
     content: "";
@@ -352,6 +376,7 @@ p{
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
+    left: 0;
 }
 .phoneCont::before{
     content: "";
@@ -362,6 +387,7 @@ p{
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
+    left: 0;
 }
 .addressCont::before{
     content: "";
@@ -372,6 +398,7 @@ p{
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
+    left: 0;
 }
 
 footer{
