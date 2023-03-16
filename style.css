@@ -5,6 +5,8 @@
     --font-color-general: #FFFFFF;
     --font-color-aditional: #828282;
     --font-color-description: #0D4D14;
+
+    --font-size16: 16px;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -20,7 +22,7 @@ body{
     font-size: 64px;
     font-weight: 800;
     line-height: 96px;
-    color: #828282;
+    color: var(--font-color-aditional);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 h4{
@@ -29,7 +31,7 @@ h4{
     line-height: 24px;
     padding: 30px 30px 0 30px;
     margin: 0;
-    color: #0D4D14;
+    color: var(--font-color-description);
 }
 h5{
     font-weight: 700;
@@ -43,7 +45,7 @@ p{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #0D4D14;
+    color: var(--font-color-description);
 }
 a{
     text-decoration: none;
@@ -53,7 +55,8 @@ a{
     min-height: 840px;
     background-image: url('images/Rectangle_grass.png');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: cover;
 }
 .companyLogo{
     padding-top: 58px;
@@ -77,14 +80,14 @@ a{
     display: inline-block;
     text-align: center;
     line-height: 67.5%;
-    color: #FFFFFF;
+    color: var(--font-color-general);
 }
 .company>span{
     font-weight: 800;
     font-size: 27px;
     line-height: 118.5%;
     letter-spacing: 0.26em;
-    color: #FFFFFF;
+    color: var(--font-color-general);
 }
 .inputField{
     display: flex;
@@ -97,12 +100,12 @@ a{
     border: none;
 }
 .fname:focus{
-    color: #FFFFFF;
+    color: var(--font-color-general);
     font-weight: 400;
     font-size: 16px;
 }
 ::placeholder{
-    color: #FFFFFF;
+    color: var(--font-color-general);
     text-align: center;
     font-weight: 500;
     font-size: 18px;
@@ -114,7 +117,7 @@ a{
     padding: 17px 0 100px;
     line-height: 134px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--font-color-general);
     text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 .button{
@@ -223,7 +226,8 @@ a{
     min-height: 732px;
     background-image: url('images/Rectangle_grass_dark.png');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: cover;
     padding-bottom: 50px;
 }
 .textDescription{
@@ -243,7 +247,7 @@ a{
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--font-color-general);
     margin: 0 30px;
 }
 .aboutAfter{
