@@ -23,8 +23,8 @@ body {
 }
 
 h4 {
-  font-weight: 900;
   font-size: 16px;
+  font-weight: 900;
   line-height: 24px;
   padding: 30px 30px 0 30px;
   margin: 0;
@@ -32,8 +32,8 @@ h4 {
 }
 
 h5 {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 22px;
   color: #6CB981;
   margin: 0 0 13px;
@@ -41,8 +41,8 @@ h5 {
 
 p {
   margin: 0;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
   color: #0D4D14;
 }
@@ -79,8 +79,8 @@ a {
 }
 
 .company {
+  font-size: 64px;
   font-weight: 800;
-  font-size: 60px;
   display: inline-block;
   text-align: center;
   line-height: 67.5%;
@@ -88,8 +88,8 @@ a {
 }
 
 .company > span {
-  font-weight: 800;
   font-size: 27px;
+  font-weight: 800;
   line-height: 118.5%;
   letter-spacing: 0.26em;
   color: #FFFFFF;
@@ -109,29 +109,29 @@ a {
 
 .fname:focus {
   color: #FFFFFF;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
 }
 
 ::-moz-placeholder {
   color: #FFFFFF;
   text-align: center;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   line-height: 27px;
 }
 
 ::placeholder {
   color: #FFFFFF;
   text-align: center;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   line-height: 27px;
 }
 
 .bigTitle {
-  font-weight: 900;
   font-size: 144px;
+  font-weight: 900;
   padding: 17px 0 100px;
   line-height: 134px;
   text-align: center;
@@ -183,8 +183,8 @@ a {
   display: block;
   width: 109px;
   height: 94px;
-  background-image: url("images/3grases.png");
   position: absolute;
+  background-image: url("images/3grases.png");
   background-position: center;
   background-repeat: no-repeat;
   bottom: 4px;
@@ -260,7 +260,6 @@ a {
   background-position: center;
   background-repeat: repeat-x;
   background-size: cover;
-  padding-bottom: 50px;
 }
 
 .textDescription {
@@ -277,8 +276,8 @@ a {
 
 .text {
   max-width: 360px;
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
@@ -295,8 +294,8 @@ a {
   display: block;
   width: 109px;
   height: 94px;
-  background-image: url("images/3grases.png");
   position: absolute;
+  background-image: url("images/3grases.png");
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(-3.6deg);
@@ -334,8 +333,8 @@ a {
   display: block;
   width: 80px;
   height: 80px;
-  background-image: url("images/userAv.png");
   position: absolute;
+  background-image: url("images/userAv.png");
   background-position: center;
   background-repeat: no-repeat;
   left: -94px;
@@ -347,8 +346,8 @@ a {
   display: block;
   width: 114px;
   height: 18px;
-  background-image: url("images/stars.png");
   position: absolute;
+  background-image: url("images/stars.png");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
@@ -381,8 +380,8 @@ a {
 }
 
 .pContacts {
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 17px;
   color: #333333;
 }
@@ -439,8 +438,8 @@ a {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url("images/mail.png");
   position: absolute;
+  background-image: url("images/mail.png");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
@@ -451,8 +450,8 @@ a {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url("images/call.png");
   position: absolute;
+  background-image: url("images/call.png");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;
@@ -463,8 +462,8 @@ a {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url("images/location-on.png");
   position: absolute;
+  background-image: url("images/location-on.png");
   background-position: center;
   background-repeat: no-repeat;
   left: 0;

@@ -15,33 +15,41 @@ body{
 .s-logo{
     margin: 0;
     text-align: center;
-    font-size: 64px;
-    font-weight: 800;
+    font : {
+        size: $font-size64;
+        weight: $font-weight-800;
+    }
     line-height: 96px;
     color: $font-color-aditional;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 h4{
-    font-weight: 900;
-    font-size: 16px;
+    font : {
+        size: $font-size16;
+        weight: $font-weight-900;
+    }
     line-height: 24px;
     padding: 30px 30px 0 30px;
     margin: 0;
-    color: $font-color-description;
+    color: $font-color-description-text;
 }
 h5{
-    font-weight: 700;
-    font-size: 18px;
+    font : {
+        size: $font-size18;
+        weight: $font-weight-700;
+    }
     line-height: 22px;
-    color: #6CB981;
+    color: $font-color-green;
     margin: 0 0 13px;
 }
 p{
     margin: 0;
-    font-weight: 400;
-    font-size: 14px;
+    font : {
+        size: $font-size14;
+        weight: $font-weight-400;
+    }
     line-height: 20px;
-    color: $font-color-description;
+    color: $font-color-description-text;
 }
 a{
     text-decoration: none;
@@ -49,10 +57,12 @@ a{
 .RoundRock{
     width: 100%;
     min-height: 840px;
-    background-image: url('images/Rectangle_grass.png');
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: cover;
+    background : {
+        image: url('images/Rectangle_grass.png');
+        position: center;
+        repeat: repeat-x;
+        size: cover;
+    }
 }
 .companyLogo{
     padding-top: 58px;
@@ -65,25 +75,31 @@ a{
     min-width: 78px;
     min-height: 84px;
     display: inline-block;
-    background-image: url('images/Lawncare.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/Lawncare.png');
+        position: center;
+        repeat: no-repeat;
+    }
     margin-right: 20px;
 }
 .company{
-    font-weight: 800;
-    font-size: 60px;
+    font : {
+        size: $font-size64;
+        weight: $font-weight-800;
+    }
     display: inline-block;
     text-align: center;
     line-height: 67.5%;
-    color: $font-color-general;
+    color: $font-bg-color-general;
 }
 .company>span{
-    font-weight: 800;
-    font-size: 27px;
+    font : {
+        size: $font-size27;
+        weight: $font-weight-800;
+    }
     line-height: 118.5%;
     letter-spacing: 0.26em;
-    color: $font-color-general;
+    color: $font-bg-color-general;
 }
 .inputField{
     display: flex;
@@ -96,24 +112,30 @@ a{
     border: none;
 }
 .fname:focus{
-    color: $font-color-general;
-    font-weight: 400;
-    font-size: 16px;
+    color: $font-bg-color-general;
+    font : {
+        size: $font-size16;
+        weight: $font-weight-400;
+    }
 }
 ::placeholder{
-    color: $font-color-general;
+    color: $font-bg-color-general;
     text-align: center;
-    font-weight: 500;
-    font-size: 18px;
+    font : {
+        size: $font-size18;
+        weight: $font-weight-500;
+    }
     line-height: 27px;
 }
 .bigTitle{
-    font-weight: 900;
-    font-size: 144px;
+    font : {
+        size: $font-size144;
+        weight: $font-weight-900;
+    }
     padding: 17px 0 100px;
     line-height: 134px;
     text-align: center;
-    color: $font-color-general;
+    color: $font-bg-color-general;
     text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 .button{
@@ -129,18 +151,20 @@ a{
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F9F9F9 100%);
     box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
     border-radius: 35px;
-    font-size: 18px;
-    font-weight: 700;
+    font : {
+        size: $font-size18;
+        weight: $font-weight-700;
+    }
     line-height: 27px;
     text-align: center;
-    color: #6CB981;
+    color: $font-color-green;
     border: none;
     cursor: pointer;
 }
 .helpButton:hover{
     text-decoration: underline;
-    font-size: 20px;
-    color: #2d7b42;
+    font-size: $font-size20;
+    color: $font-color-dark-green;
 
 }
 .serviceBlock{
@@ -157,10 +181,12 @@ a{
     display: block;
     width: 109px;
     height: 94px;
-    background-image: url('images/3grases.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/3grases.png');
+        position: center;
+        repeat: no-repeat;
+    }
     bottom: 4px;
     left: -4px;
 }
@@ -173,15 +199,18 @@ a{
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-
-    font-size: 18px;
-    font-weight: 400;
+    font : {
+        size: $font-size18;
+        weight: $font-weight-400;
+    }
 }
 .imgBlock{
     width: 385px;
     min-height: 290px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        position: center;
+        repeat: no-repeat;
+    }
     box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
     border-radius: 30px 30px 0 0;
     margin: 0 11px;
@@ -203,7 +232,7 @@ a{
 }
 .textAbouth{
     max-width: 385px;
-    background-color: #FFFFFF;
+    background-color: $font-bg-color-general;
     box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
     border-radius: 0 0 30px 30px;
     margin: 0 11px;
@@ -213,18 +242,19 @@ a{
     margin: 0;
 }
 .lightButton{
-    background-color: #FFFFFF;
+    background-color: $font-bg-color-general;
     box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
     margin-top: 50px;
     margin-bottom: 0;
 }
 .AboutUs{
     min-height: 732px;
-    background-image: url('images/Rectangle_grass_dark.png');
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: cover;
-    padding-bottom: 50px;
+    background : {
+        image: url('images/Rectangle_grass_dark.png');
+        position: center;
+        repeat: repeat-x;
+        size: cover;
+    }
 }
 .textDescription{
     width: 100%;
@@ -234,16 +264,21 @@ a{
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-    font-size: 18px;
-    font-weight: 400;
+    font : {
+        size: $font-size18;
+        weight: $font-weight-400;        
+    }
+
 }
 .text{
     max-width: 360px;
-    font-weight: 600;
-    font-size: 18px;
+    font : {
+        size: $font-size18;
+        weight: $font-weight-600;        
+    }
     line-height: 24px;
     text-align: center;
-    color: $font-color-general;
+    color: $font-bg-color-general;
     margin: 0 30px;
 }
 .aboutAfter{
@@ -255,10 +290,12 @@ a{
     display: block;
     width: 109px;
     height: 94px;
-    background-image: url('images/3grases.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/3grases.png');
+        position: center;
+        repeat: no-repeat;
+    }
     transform: rotate(-3.6deg);
     bottom: -45px;
     right: -65px;
@@ -276,8 +313,8 @@ a{
     width: 48%;
     display: flex;
     flex-wrap: wrap;
-    background: #FFFFFF;
-    border: 1px solid #6CB981;
+    background: $font-bg-color-general;
+    border: 1px solid $font-color-green;
     border-radius: 40px;
     padding: 30px 30px 58px 124px;
     margin-bottom: 45px;
@@ -290,10 +327,12 @@ a{
     display: block;
     width: 80px;
     height: 80px;
-    background-image: url('images/userAv.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/userAv.png');
+        position: center;
+        repeat: no-repeat;
+    }
     left: -94px;
     top: -40px;
 }
@@ -302,15 +341,17 @@ a{
     display: block;
     width: 114px;
     height: 18px;
-    background-image: url('images/stars.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/stars.png');
+        position: center;
+        repeat: no-repeat;
+    }
     left: 0;
     bottom: -28px;
 }
 .ContactUs{
-    background-color: #FCFCFC;
+    background-color: $bg-color-additional;
     margin-top: 5px;
 }
 .contactBlock{
@@ -331,10 +372,12 @@ a{
     width: 50%;
 }
 .pContacts{
-    font-weight: 500;
-    font-size: 14px;
+    font : {
+        size: $font-size14;
+        weight: 500;
+    } 
     line-height: 17px;
-    color: #333333;
+    color: $font-color-gray;
 }
 .pContacts:hover{
     font-weight: 600;
@@ -343,25 +386,25 @@ a{
     color: #044916;
 }
 .formField{
-    background: #9FDEA9;
+    background: $font-color-light-green;
     border-radius: 61px;
     border: none;
     margin-bottom: 14px;
     padding: 16px 53px;
 }
 .emptyButton{
-    border: 3px solid #4DB96B;
+    border: 3px solid $color-bordedr-button;
     border-radius: 61px;
     padding: 16px 53px;
-    background-color: #FCFCFC;
+    background-color: $bg-color-additional;
     display: block;
     margin: 0 auto;
 }
 .emptyButton:hover{
-    border: 3px solid #1e803a;
+    border: 3px solid $color-bordedr-button-hover;
     border-radius: 61px;
     padding: 21px 53px;
-    background-color: #d2f2ca;
+    background-color: $bg-color-button;
     cursor: pointer;
 }
 .mailCont{
@@ -381,10 +424,12 @@ a{
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('images/mail.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/mail.png');
+        position: center;
+        repeat: no-repeat;
+    }
     left: 0;
 }
 .phoneCont::before{
@@ -392,10 +437,12 @@ a{
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('images/call.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/call.png');
+        position: center;
+        repeat: no-repeat;
+    }
     left: 0;
 }
 .addressCont::before{
@@ -403,15 +450,16 @@ a{
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url('images/location-on.png');
     position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background : {
+        image: url('images/location-on.png');
+        position: center;
+        repeat: no-repeat;
+    }
     left: 0;
 }
-
 footer{
     width:100%;
     height: 145px;
-    background-color: #324B29;
+    background-color: $bg-color-footer;
 }
