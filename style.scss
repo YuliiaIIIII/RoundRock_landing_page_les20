@@ -408,7 +408,7 @@ footer{
     height: 145px;
     background-color: $bg-color-footer;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px){
     .bigTitle{
         font-size: 7rem;
     }
