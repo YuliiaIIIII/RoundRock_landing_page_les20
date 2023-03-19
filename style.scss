@@ -408,3 +408,43 @@ footer{
     height: 145px;
     background-color: $bg-color-footer;
 }
+@media screen and (min-width: 1024px) {
+    .bigTitle{
+        font-size: 7rem;
+    }
+    .helpButton,
+    .helpButton:hover{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 2rem;
+        padding: 30px 30px 30px 30px;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .textDescription{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+    .mediaButton{
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .text{
+        max-width: 60%;
+        line-height: 30px;
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .userFeedback {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
