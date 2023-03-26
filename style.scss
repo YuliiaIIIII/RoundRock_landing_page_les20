@@ -135,11 +135,11 @@ a{
     color: $font-color-green;
     border: none;
     cursor: pointer;
-}
-.helpButton:hover{
-    text-decoration: underline;
-    font-size: $font-size20;
-    color: $font-color-dark-green;
+    &:hover{
+        text-decoration: underline;
+        font-size: $font-size20;
+        color: $font-color-dark-green;
+    }
 }
 .serviceBlock{
     display: flex;
@@ -260,7 +260,7 @@ a{
 }
 .userFeedback{
     margin: 70px auto 50px;
-    width: 63%;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -329,13 +329,14 @@ a{
     font-weight: 500;
     line-height: 17px;
     color: $font-color-gray;
+    &:hover{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        color: #044916;
+    }
 }
-.pContacts:hover{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    color: #044916;
-}
+
 .formField{
     background: $font-color-light-green;
     border-radius: 61px;
@@ -350,59 +351,60 @@ a{
     background-color: $bg-color-additional;
     display: block;
     margin: 0 auto;
-}
-.emptyButton:hover{
-    border: 3px solid $color-bordedr-button-hover;
-    border-radius: 61px;
-    padding: 21px 53px;
-    background-color: $bg-color-button;
-    cursor: pointer;
+    &:hover{
+        border: 3px solid $color-bordedr-button-hover;
+        border-radius: 61px;
+        padding: 21px 53px;
+        background-color: $bg-color-button;
+        cursor: pointer;        
+    }
 }
 .mailCont{
     position: relative;
     padding: 30px 0 0 44px;
+    &::before{
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-image: url('images/mail.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 0;
+    }
 }
 .phoneCont{
     position: relative;
     padding: 30px 0 0 44px;
+    &::before{
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-image: url('images/call.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 0;
+    }
 }
 .addressCont{
     position: relative;
     padding: 30px 0 30px 44px;
+    &::before{
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-image: url('images/location-on.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 0;
+    }
 }
-.mailCont::before{
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    background-image: url('images/mail.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 0;
-}
-.phoneCont::before{
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    background-image: url('images/call.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 0;
-}
-.addressCont::before{
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    background-image: url('images/location-on.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 0;
-}
+
 footer{
     width:100%;
     height: 145px;
@@ -443,7 +445,7 @@ footer{
         padding-bottom: 20px;
     }
     .userFeedback {
-        width: 100%;
+        max-width: 100%;
         flex-direction: column;
         align-items: center;
     }
