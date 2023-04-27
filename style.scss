@@ -15,6 +15,9 @@ body{
 .marg0{
     margin: 0;
 }
+.mb70{
+    margin-bottom: 70px;
+}
 .s-logo{
     text-align: center;
     font-size: $font-size64;
@@ -69,6 +72,11 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 20px;
+    &:hover{
+        transform: scale(1.4);
+        transition: 2.5s;
+        rotate: 360deg;
+    }
 }
 .company{
     font-size: $font-size64;
@@ -90,6 +98,7 @@ a{
     justify-content: center;
 }
 .fname{
+    width: 374px;
     padding: 18px 48px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 59px;
@@ -118,6 +127,7 @@ a{
 }
 .button{
     margin: 0 auto;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -164,6 +174,9 @@ a{
 }
 .Services{
     width: 100%;
+}
+.loremPicture{
+    display: none;
 }
 .imgBlocks{
     width: 100%;
@@ -213,6 +226,9 @@ a{
     box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
     margin-top: 50px;
     margin-bottom: 0;
+}
+.serviceAbout{
+    margin-top: 0;
 }
 .AboutUs{
     min-height: 732px;
@@ -305,24 +321,19 @@ a{
 }
 .ContactUs{
     background-color: $bg-color-additional;
-    margin-top: 5px;
 }
 .contactBlock{
-    margin: 70px auto 0;
-    width: 42%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 52.5px;
 }
 .contactForm{
-    width: 50%;
     display: flex;
     justify-content: center;
 }
 .companyContacts{
-    width: 50%;
+    padding-left: 100px;
 }
 .pContacts{
     font-size: $font-size14;
@@ -353,9 +364,8 @@ a{
     margin: 0 auto;
     &:hover{
         border: 3px solid $color-bordedr-button-hover;
-        border-radius: 61px;
-        padding: 21px 53px;
         background-color: $bg-color-button;
+        padding: 17px 53px;
         cursor: pointer;        
     }
 }
@@ -410,7 +420,9 @@ footer{
     height: 145px;
     background-color: $bg-color-footer;
 }
-@media screen and (min-width: 1024px) and (max-width: 1920px){
+
+//для екранів більше 1920px
+@media screen and (min-width: 1920px){
     .bigTitle{
         font-size: 7rem;
     }
@@ -420,12 +432,18 @@ footer{
     }
     h4{
         font-size: 2rem;
-        padding: 30px 30px 30px 30px;
+        padding: 30px;
     }
     p{
         font-size: 1.5rem;
         line-height: 30px;
         font-weight: 500;
+    }
+    .anyText{
+        padding: 10px 30px 30px 30px;
+            &:hover{
+            font-size: $font-size16;
+        }
     }
     .textDescription{
         flex-direction: column;
@@ -437,10 +455,13 @@ footer{
         padding-top: 20px;
         padding-bottom: 40px;
     }
+    .serviceBlock{
+        margin-top: 0;
+    }
     .text{
-        max-width: 60%;
-        line-height: 30px;
-        font-size: 24px;
+        max-width: 70%;
+        line-height: 40px;
+        font-size: 26px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -449,4 +470,147 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-  }
+    .contactBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+    .emptyButton{
+        margin-top: 50px;
+    }
+    .companyContacts {
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+    }
+    .pContacts {
+        font-size: 28px;
+    }
+    .mailCont::before {
+        left: 180px;
+    }
+    .phoneCont::before {
+        left: 180px;
+    }
+    .contactForm{
+        display: inline-block;
+        width: 50%;
+    }
+    .formField {
+        width: 100%;
+    }
+}
+
+//для екранів менше 1024px
+  @media screen and (max-width: 1024px){
+    .bigTitle{
+        font-size: 5rem;
+    }
+    .helpButton,
+    .helpButton:hover{
+        font-size: 1.5rem;
+    }
+    .s-logo{
+        margin-top: 20px;
+    }
+    .serviceBlock{
+        margin-top: 0;
+    }
+    .imgBlock {
+        width: 0;
+        min-height: 0px;
+    }
+    .infoBlocks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textAbouth{
+        max-width: 80%;
+        margin-bottom: 25px;
+    }
+    .loremPicture{
+        display: block;
+        max-width: 100%;
+        height: 360px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
+        border-radius: 60px 60px 0 0;
+    }
+    .loremGrass{
+        background-image: url('images/little_grass.png');
+    }
+    .loremFlowers{
+        background-image: url('images/little_flowers.png');
+    }
+    .loremMachine{
+        background-image: url('images/grass_remove.png');
+    }
+    h4{
+        font-size: 2.2rem;
+        padding: 30px;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        font-size: 1.6rem;
+        line-height: 35px;
+        padding: 0 20px;
+
+    }
+    .textAbouth{
+        border-radius: 60px;
+    }
+    .textDescription{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+    .aboutAfter::after {
+        right: -40px;
+    }
+    .text {
+        max-width: 80%;
+        padding-bottom: 20px;
+    }
+    .userFeedback{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    h5{
+        font-size: $font-size20;
+    }
+    .userCard {
+        width: 80%;
+    }
+    .mb70 {
+        margin-bottom: 20px;
+    }
+    .pContacts {
+        font-size: 1.2rem;
+    }
+    .contactBlock{
+        flex-direction: column;
+        align-items: center;
+    }
+    .companyContacts {
+        padding-left: 0;
+    }
+    .mailCont,
+    .pContacts{
+        text-align: center;
+    }
+    .mailCont::before {
+        left: 150px;
+        top: 27px;
+    }
+    .phoneCont::before {
+        left: 160px;
+        top: 27px;
+    }
+    .addressCont::before {
+        left: 25px;
+        top: 27px;
+    }
+}
