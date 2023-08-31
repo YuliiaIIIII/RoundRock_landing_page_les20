@@ -481,6 +481,7 @@ footer {
   background-color: #324B29;
 }
 
+
 @media screen and (min-width: 1920px) {
   .bigTitle {
     font-size: 7rem;
@@ -669,4 +670,4 @@ footer {
     left: 25px;
     top: 27px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
