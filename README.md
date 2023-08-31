@@ -1,10 +1,10 @@
-# WebPage 'Round Rock Yard Maintenance' - is a landing page based on a Figma layout. The goal of the project is to consolidate the learned technologies and practice working with layouts.
+## WebPage 'Round Rock Yard Maintenance' - is a landing page based on a Figma layout. The goal of the project is to consolidate the learned technologies and practice working with layouts.
 
-# Technologies used in the project: HTML5, CSS3 and SCSS based on the Sass preprocessor.
+## Technologies used in the project: HTML5, CSS3 and SCSS based on the Sass preprocessor.
 
-## [Figma layout] (https://www.figma.com/file/TyqWsZ6YExKVF3iJrLanOw/12-FREE-Landing-Pages-(Community)?type=design&node-id=0-1&mode=design)
+### [Figma layout] (https://www.figma.com/file/TyqWsZ6YExKVF3iJrLanOw/12-FREE-Landing-Pages-(Community)?type=design&node-id=0-1&mode=design)
 
-## run_the_page
+### run_the_page
 
 To launch the landing page, you need:
 - to have a code editor installed on your PC (recommended: Visual Studio Code)
