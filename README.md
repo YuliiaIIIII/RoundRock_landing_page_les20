@@ -2,7 +2,7 @@
 
 ## Technologies used in the project: HTML5, CSS3 and SCSS based on the Sass preprocessor.
 
-### [Figma layout] (https://www.figma.com/file/TyqWsZ6YExKVF3iJrLanOw/12-FREE-Landing-Pages-(Community)?type=design&node-id=0-1&mode=design)
+### [Figma layout](https://www.figma.com/file/TyqWsZ6YExKVF3iJrLanOw/12-FREE-Landing-Pages-(Community)?type=design&node-id=0-1&mode=design)
 
 ### run_the_page
 
@@ -18,4 +18,4 @@ $ cd .\lesson20\
 - right click on the file 'index.html'
 - Open with Live Server
 
-### The page will be authomatically load with the default browser when you make changes. You may also [open] (http://127.0.0.1:5500/index.html) to view it in your browser.
+### The page will be authomatically load with the default browser when you make changes. You may also [open](http://127.0.0.1:5500/index.html) to view it in your browser.
