@@ -116,6 +116,9 @@ a{
 	font-weight: $font-weight-500;
 	line-height: 27px;
 }
+.fname:focus::placeholder {
+  color: transparent;
+}
 .bigTitle{
 	font-size: $font-size144;
 	font-weight: $font-weight-900;
@@ -612,4 +615,94 @@ footer{
 		left: 25px;
 		top: 27px;
 	}
+}
+//для екранів менше 844px
+@media screen and (max-width: 720px){
+	.logo {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.company {
+  font-size: 3.5rem;
+  line-height: 80.5%;
+}
+::placeholder{
+	font-size: $font-size14;
+	font-weight: $font-weight-400;
+}
+.bigTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 84px;
+}
+.button {
+  padding-bottom: 20px;
+}
+.lightButton {
+  margin-top: 30px;
+}
+.helpButton {
+  padding: 11px 23px;
+  font-size: $font-size18;
+}
+.s-logo {
+  font-size: 3rem;
+}
+.loremPicture {
+  height: 220px;
+  border-radius: 30px 30px 0 0;
+}
+.textAbouth{
+  border-radius: 30px;
+}
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 0;
+}
+.anyText {
+  padding: 20px 15px 30px;
+  font-size: $font-size14;
+  font-weight: 400;
+  line-height: 20px;
+}
+.textDescription {
+  padding-top: 60px;
+}
+.text {
+  max-width: 360px;
+  font-size: $font-size16;
+  font-weight: 500;
+}
+p {
+  font-size: 1rem;
+  line-height: 25px;
+  padding: 0;
+}
+.userCard {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #6cb981;
+  border-radius: 30px;
+  padding: 100px 15px 20px 15px;
+  margin-bottom: 45px;
+}
+.userText::before{
+  left: 0;
+  top: -125px;
+}
+.userText::after{
+  left: 110px;
+  bottom: 275px;
+}
+.mailCont::before {
+  left: 110px;
+}
+.phoneCont::before {
+  left: 110px;
+}
+.addressCont::before {
+  left: 20px;
+}
 }
